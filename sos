@@ -1,0 +1,67 @@
+#!/bin/bash
+#------------   __    ----------------------------  _  --------------------
+#    ___ _   _ / _| ___  _ __ __ _ _ __   __ _  ___| |__ (_)_   _____ _ __
+#   / __| | | | |_ / _ \| '__/ _` | '_ \ / _` |/ __| '_ \| \ \ / / _ \ '__|
+#  | (__| |_| |  _| (_) | | | (_| | | | | (_| | (__| | | | |\ V /  __/ |
+#   \___|\__, |_|  \___/|_|  \__,_|_| |_|\__, |\___|_| |_|_| \_/ \___|_|
+#------  |___/    ---------------------  |___/  ---------------------------
+
+echo "• Loading.."
+sleep 2
+clear
+
+echo " ______  ___      _________ "
+sleep 0.06
+echo " ___   |/  /_____ ______  /______________ ________ "
+sleep 0.06
+echo " __  /|_/ / _  _ \_  __  / __  ___/_  __ \__  ___/ "
+sleep 0.06
+echo " _  /  / /  /  __// /_/ /  _(__  ) / /_/ /_(__  ) "
+sleep 0.06
+echo " /_/  /_/   \___/ \__,_/   /____/  \____/ /____/ "
+echo
+echo " [•] Menu Pilihan : "
+echo
+echo " [1] Facebook "
+echo " [2] Instagram            |•|====================|•| "
+echo " [3] Twiter               |•|   CYFORANGCHIVER   |•| "
+echo "                          |•|====================|•| "
+echo " [G] Google "
+echo " [0] Keluar "
+echo
+echo "Masukkan Pilihan : "
+read pilih
+
+     if [ $pilih = "1" ]
+     then
+clear
+w3m https://www.facebook.com
+
+     elif [ $pilih = "2" ]
+     then
+clear
+w3m https://www.instagram.com/?hl=id
+
+     elif [ $pilih = "3" ]
+     then
+clear
+w3m https://www.twiter.com
+
+     elif [ $pilih = "G" ] || [ $pilih = "g" ]
+     then
+clear
+w3m https://www.google.com
+
+     elif [ $pilih = "0" ]
+     then
+echo "• See You Sayank ;p "
+sleep 3
+clear
+exit
+     else
+clear
+echo "ERROR ,Kesalahan! "
+echo
+echo "[•] CYFORANGCHIVER "
+echo
+     fi
